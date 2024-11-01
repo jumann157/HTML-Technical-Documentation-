@@ -1,0 +1,263 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: system-ui;
+    background-color: rgb(255,255,255);
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    margin-left: 380px; 
+  }
+  
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 380px;
+    height: 100vh;
+    border-right: 5px solid black;
+    box-sizing: border-box;
+    z-index: 999;
+    padding: 0px;
+  }
+  
+  .main-header {
+    font-size: 24px;
+    border-bottom: 2.5px solid black;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  .main-header, .table-of-content {
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  
+  .dropdown-title a {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 14.5px;
+    width: auto;
+    margin-left: 10px;
+    transition: background-color 0.2s, color 0.2s; 
+    font-weight: bold;
+    border-bottom: 1.5px solid transparent;
+  }
+  
+  .dropdown-title a:hover {
+    color: #222222;
+    border-bottom: 1.5px solid #7f7f7f;
+  }
+  
+  .dropdown-content {
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 25px;
+  }
+  
+  nav .dropdown-content li {
+    list-style-type: none;
+    padding: 10px 5px;
+    margin: 12px;
+    transition: all 0.2s;
+  }
+  
+  nav .dropdown-content li:hover {
+    background-color: #e9e9e9;
+    color: black;
+    padding-left: 10px;
+  }
+  
+  .dropdown-title a,.dropdown-content a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #maindoc {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .main-section {
+    box-sizing: border-size;
+    color: black;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 75px;
+    margin: 0;
+    scroll-margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  section > div {
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 39px;
+    font-weight: 660;
+    margin: 20px auto;
+  }
+  
+  p {
+     font-size: 16px;
+     /*border: 1px solid green;*/
+     font-weight: 410;
+     line-height: 29px;
+     margin-bottom: 5px;
+  }
+  
+  pre {
+    display: block;
+    background-color: rgb(242,241,241);
+    color: black;
+    padding: 20px 15px;
+    border-radius: 3.7px;
+    font-size: 14.5px;
+    font-weight: 100;
+    width: 70%;
+  }
+  
+  .not-code {
+    background-color: rgb(255,255,255);
+    border-left: 4px solid #e9e9e9;
+    line-height: 30px;
+  }
+  
+  .main-section p {
+    width: 80%;
+  }
+  
+  h3 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+  
+  p, h2, h3 {
+    word-spacing: 2px;
+  }
+  
+  img {
+    margin: 15px auto;
+  }
+  
+  .img-meta img {
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    background-color: eggshell;
+    border: 1px solid #D3D3D3;
+  }
+  
+  .not-bold {
+    font-weight: 200;
+    margin-top: 20;
+  }
+  
+  .word-with-background-color {
+    background-color: #f0f0f0;
+    padding: 2.5px 5px;
+    border-radius: 3.7px;
+    /*background-color: #D9DDDC60;*/
+  }
+  
+  .main-section li {
+    padding-left: 20px;
+    line-height: 25px;
+  }
+  
+  .newspaper-img {
+    width: 600px;
+    padding-left: 75px;
+  }
+  
+  .bbc-homepage-img {
+    padding-left: 75px;
+  }
+  
+  .code-example {
+    border: 1px solid #7f7f7f;
+    padding: 18px 15px;
+  }
+  
+  .code-example img {
+    width: 50px;
+  }
+  
+  .good-code-example {
+    background-color: rgb(234,241,235);
+  }
+  
+  .bad-code-example {
+    background-color: rgb(249,233,235);
+  }
+  
+  @media (max-width: 500px) {
+  
+    .container {
+      display: flex;
+      flex-direction: column; 
+      margin-left: 0px;
+      overflow-x: visible;
+      overflow-y: auto;
+    }
+  
+    #navbar {
+      position: relative;
+       width: 100%;
+       height: auto; 
+       border-right: none; 
+      border-bottom: 5px solid black; 
+      z-index: 999;
+      padding-bottom: 10px;
+    }
+  
+    #main-doc {
+       margin-top: 18px;
+      z-index: 1; 
+    }
+  
+    #main-doc p {
+      word-wrap: break-word;
+      max-width: 100%;
+      margin: 0 10px;
+    }
+  
+    .main-section {
+      margin-top: 10px;
+      padding: 10px; 
+    }
+  
+      
+    h2 {
+      font-size: 24px; 
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .img-meta img, .newspaper-img, .bbc-homepage-img {
+      max-width: 100%; 
+      height: auto; 
+      padding-left: 5px;
+      box-sizing: border-box;
+    }
+  
+    pre {
+      max-width: 100%;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  }
